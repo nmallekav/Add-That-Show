@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/main.css">
+</head>
+    <script src="/socket.io/socket.io.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<ul id="animeList">
+{{#each animes}}
+<article id = "homeuser" class = "homeuser">
+    <h2 style = "color : blue">
+       Username : {{this.username}}
+    </h2>
+
+        Show Rated: {{this.title}}
+    
+    <hr>
+    <a href="/post/{{this.username}}">Read more...</a>
+</article>
+{{else}}
+
+<article>
+    <h1>There are no rankings made yet. :(</h1>
+    <a href="/create">Make an account and write your first ranking!</a>
+</article>
+{{/each}}
+</ul>
+
+
+	<script>
+        var socket = io(); 
+
+        //Task 2 - Step 2: Listen for message from server when some client creates a new movie
+        socket.on('new anime listing', function(mov) {
+           $('#animeList').append($('<h2 class = "homeuser" style = "color: blue; font-size : 30px">').text("Username: " + mov.username));
+           $('#animeList').append($('<div class = "homeuser" style = "position:relative">').text("Show Rated: " + mov.title));
+           $('#animeList').append($('<a href = /post/'+mov.username+' class = "homeuser" style = "position:relative">').text("Read more..."));
+        });
+
+	</script>
+</html>
+

@@ -1,0 +1,51 @@
+<h1 class = "createTitle">Create New Blog Post</h1>
+
+<article class = "creatingdata">
+    <form id = "animes" method="POST" action="/api/create">
+
+     <div class = "user name" style = "font-size : 30px;" >
+        <label>Username</label>
+        <br><input style = "height : 40px;"type = "text" name="username" size="50" placeholder="Username"></br>
+    </div>
+
+    <div style = "font-size : 30px;">
+        <br><label>Anime Title</label>
+        <br><input style = "height : 40px;" type = "text" name="title" size="50" placeholder="Anime Title"></br>
+    </div>
+
+    <div class = "type" style = "font-size : 30px;">
+       <br> <label>Type of Anime</label><br><br>
+        <div>
+            <input type="radio" id="typeAction" name="type" value="action">
+            <label for="typeAction">Action</label>
+
+            <input type="radio" id="typeComedy" name="type" value="comedy">
+            <label for="typeComedy">Comedy</label>
+        </div>
+    </div>
+
+    <div class = "number" style = "font-size : 30px;">
+        <br> <label>Number of seasons</label>
+        <br><input style = "height : 40px;" type = "text" name="seasons" size="50" placeholder="Num Seasons...">
+    </div>
+
+    <div class = "number" style = "font-size : 30px;">
+        <br> <label>Number of episodes</label>
+        <br><input style = "height : 40px;" type = "text" name="episodes" size="50" placeholder="Num episodes..."></br>
+    </div>
+
+    <div class = "number" style = "font-size : 30px;">
+        <br> <label>Rank out of 10</label>
+        <br><input style = "height : 40px;" type = "text" name="rank" size="50" placeholder="Rank out of 10..."></br>
+    </div>
+
+    <div class = "number" style = "font-size : 30px;">
+        <br> <label>Youtube Clip</label>
+        <br><input style = "height : 40px;" type = "text" name="clip" size="50" placeholder="Youtube clip..."></br>
+    </div>
+
+    <br><button style = "height : 50px; width : 300px; position: relative; bottom : 500px; left: 500px" type="submit">Create Post </button>
+
+    </form>
+</article>
+

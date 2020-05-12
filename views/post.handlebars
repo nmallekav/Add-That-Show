@@ -1,0 +1,28 @@
+<div class="title-container">
+
+   <h1 class = "specificname">name: {{name}}</h1><br><br>
+
+    {{#each data}}
+        <div class = "display">Title: {{this.title}} </div>
+        <div class = "display">Type: {{this.type}}</div>
+        <div class = "display">Seasons: {{this.seasons}}</div>
+        <div class = "display">Episodes: {{this.episodes}}</div>
+        <div class = "display">Rank out of 10: {{this.rank}}</div>
+        <div class = "display">Title of clips: {{this.clip}}</div>
+
+        <div class = "display">Comments:</div>
+        {{#each this.comment}}
+            <div class = "display">{{this}}</div>
+        {{/each}}
+
+        <br><br>
+        
+    {{/each}}
+
+</div>
+
+<div class="content">
+    {{{content}}}
+</div>
+
+
