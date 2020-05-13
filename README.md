@@ -7,7 +7,7 @@ Name: Nishanth Mallekav
 
 Date: Tuesday May 12th
 
-Project Topic: Anime Rating
+Project Topic: Anime Ranker
 
 URL: http://localhost:3000/
 
