@@ -111,3 +111,4 @@ Navigation Filters
 6. longest anime -> `  /nav/longestAnime   `
 7. longest anime -> `  /about   `
 
+# movie-ranker
