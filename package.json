@@ -19,7 +19,7 @@
         "morgan": "^1.8.1",
         "ng-youtube-embed": "^1.7.16",
         "socket.io": "^2.3.0",
-        "underscore": "^1.10.2",
+        "underscore": "^1.12.1",
         "validator": "^13.0.0",
         "video-embed": "^0.2.0",
         "youtube-video-js": "^3.2.0"
